@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang ="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page - Práctica UMG</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="logo">MiMarca</div>
+            <nav class="nav">
+                <a href="#Servicios">Servicios</a>
+                <a href="#simulador">Simulador</a>
+                <a href="#herramientas">Herramientas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </header>
+    <!--Aqui irá todo nuestro contenido--> 
+
+    <main>
+        <!--2. Sección Hero-->
+        <section class="hero">
+            <h1>Construimos soluciones digitales</h1>
+            <p>Ayudamos a tu negocio a crecer con tecnologia de vanguardia.</p>
+
+            <!-- Botón que activa el Modal -->
+             <button id="btn-abrir-modal" class="btn-cta">
+                Ver Tutorial en Video
+             </button>
+        </section>
+        <!-- Aquí seguirán las demás secciones -->
+        <!--3. Sección Servicios (CSS Grid)-->
+        <section id="servicios" class="servicios">
+            <div class="tarjeta">
+                <h3>Desarrollo Web</h3>
+                <p>Sitios rápidos y modernos.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>APIs & Backend</h3>
+                <p>Backends robustos y escalables.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Consultoria</h3>
+                <p>Te ayudamos a elegir la mejor arquitectura.</p>
+            </div>
+        </section>
+        <!--4. Simulador de Métricas (Tabla HTML)-->
+        <section id="simulador" class="seccion-simulador">
+            <h2>Simulador de Métricas y Tráfico</h2>
+            <p class="subtitulo">Ejemplo de tabla de datos dinámicos simulados:</p>
+
+            <div class="contenedor-tabla">
+                <table class="tabla-datos">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Proyecto</th>
+                            <th>Métricas / Visitas</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>E-commerce Tienda</td>
+                            <td>23,450 visitas/mes</td>
+                            <td><span class="badge badge-alerta">En pausa</span></td>
+                        </tr>
+                        <tr>
+                            <td>#003</td>
+                            <td>App de Consultoria</td>
+                            <td>3,100 visitas/mes</td>
+                            <td><span class="badge badge-alerta">En Pausa</span></td>
+                        </tr>
+                        <tr>
+                            <td>#004</td>
+                            <td>API de Pagos</td>
+                            <td>98,000 req/día</td>
+                            <td><span class="badge badge-exito">Activo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!--5. Enlaces y Búsqueda Ecterna-->
+        <section id="Herramientas" class="seccion-acciones">
+            <h2>Investiga e Indaga Más</h2>
+            <p>Aprende más sobre desarrollo web utilizando motores de Búsqueda:</p>
+
+            <div class="group-botones">
+                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="btn-externo google">
+                    Ir a google
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+    </body>
+</html>
